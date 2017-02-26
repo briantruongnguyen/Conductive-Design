@@ -1,3 +1,5 @@
+var connect = require('connect');
+
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -12,7 +14,6 @@ var about = require('./routes/about');
 // var user = require('./routes/user');
 
 var app = express();
-
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
