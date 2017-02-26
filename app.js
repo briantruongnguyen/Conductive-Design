@@ -3,8 +3,12 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
 // Example route
+var home = require('./routes/home');
+var products = require('./routes/products');
+var services = require('./routes/services');
+var contact = require('./routes/contact');
+var about = require('./routes/about');
 // var user = require('./routes/user');
 
 var app = express();
@@ -30,11 +34,7 @@ if ('development' == app.get('env')) {
 }
 
 
-var home = require('./routes/home');
-var products = require('./routes/products');
-var services = require('./routes/services');
-var contact = require('./routes/contact');
-var about = require('./routes/about');
+
 
 
 app.get('/', home.view);
