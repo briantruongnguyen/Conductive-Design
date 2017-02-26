@@ -3,7 +3,7 @@
 
     $('.button-collapse').sideNav();
       $('.slider').slider();
-      $('.slider').height(550);
+      $('.slider').height(500);
       $('.slides').height('95%');
 
       
